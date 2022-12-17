@@ -4,7 +4,7 @@ module.exports = {
   collectCoverageFrom: ["<rootDir>/src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"],
   resetMocks: true,
   moduleNameMapper: {
-    "^~/(.*)$": "<rootDir>/src/$1",
+    "^@/(.*)$": "<rootDir>/src/$1",
   },
   setupFilesAfterEnv: ["<rootDir>/jest/setupTests.ts"],
   testEnvironment: "jsdom",
